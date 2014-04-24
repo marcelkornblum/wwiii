@@ -1,0 +1,83 @@
+
+body {
+    margin-left: 25%;
+    margin-top: 50px;
+    color: #000;
+    background-color: #ffffff;
+    width: 50%;
+    font-family: Helvetica, arial, sans-serif;
+}
+
+p, dt, dl {
+    font-size: 60px;
+    font-weight: 800;
+    color: #000;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+#news {
+    font-size: 40px;
+}
+
+#refresh p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#share {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+
+}
+
+#famous {
+    font-size: 12px;
+    position: fixed;
+    bottom: 5px;
+    right: 25px;
+    color: #777777;
+
+}
+
+#facebook {
+    position: fixed;
+    bottom: 0px;
+    right: 85px;
+
+}
+
+#twitter {
+    font-size: 12px;
+    position: fixed;
+    bottom: 27px;
+    right: 25px;
+    color: #777777;
+
+}
+
+#adtower {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+#book {
+    position: fixed;
+    bottom:75px;
+    right: 25px;
+}
+
+#order {
+    font-size: 12px;
+    padding-top: 3px;
+    position: fixed;
+    bottom:55px;
+    right: 25px;
+}
+
+a:link {color: #000; text-decoration: none; font-weight: 800;}
+a:active {text-decoration: none;}
+a:hover {color: #000; text-decoration: underline;}
+a:visited {color: #000; text-decoration: none;}

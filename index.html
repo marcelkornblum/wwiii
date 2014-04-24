@@ -1,0 +1,95 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="google-site-verification" content="mYX_jUYk89Y5Z8_4hzanAwNiKZgTJS94pl-QhU4hLec" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Is it World War III yet?</title>
+<META name="description" content="Is it World War III yet? We'll keep you in the know." />
+<meta property="og:title" content="Is it World War III yet?"/>
+<meta property="og:site_name" content="Your easy reference to check whether everyone's at war yet or not."/>
+
+<link rel='stylesheet' href='style.css' type='text/css' />
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+
+google.load("feeds", "1");
+
+function initialize() {
+  var feed = new google.feeds.Feed("http://www.google.com/alerts/feeds/00515402556851496511/17576995334574142249");
+  feed.setNumEntries(1);
+  feed.includeHistoricalEntries();
+  feed.load(function(result) {
+    if (!result.error && result.feed && result.feed.entries.length > 0) {
+        var entry = result.feed.entries[0];
+
+        var a_title = document.createElement("a");
+        a_title.href = entry.link;
+        a_title.appendChild(document.createTextNode(entry.title));
+
+        var statement = document.getElementById("statement");
+        statement.appendChild(document.createTextNode("Not yet, but..."));
+        var news = document.getElementById("news");
+        news.appendChild(a_title);
+
+        var container = document.getElementById("refresh");
+        var p = document.createElement("p");
+        var a_body = document.createElement("a");
+        a_body.href = entry.link;
+        a_body.innerHTML = entry.content;
+        p.appendChild(a_body);
+        container.appendChild(p);
+    } else {
+        var statement = document.getElementById("statement");
+        statement.appendChild(document.createTextNode("Apparently not"));
+    }
+  });
+}
+google.setOnLoadCallback(initialize);
+
+</script>
+
+</head>
+<body>
+<p>
+
+<dt>
+<dl id="statement"></dl>
+</dt>
+<dl>
+<dt id="news"></dt>
+</dl>
+</p>
+<div id='refresh'>
+
+</div>
+
+
+<!-- <div id="order"><a href="http://www.amazon.com/gp/product/0762441771/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0762441771&linkCode=as2&tag=wtfsibfc-20" target="_blank">Buy the fucking Cookbook</a><img src="http://www.assoc-amazon.com/e/ir?t=whthfushimafo-20&l=as2&o=1&a=0762441771" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+or <a href="http://www.amazon.com/gp/product/0762449071/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0762449071&linkCode=as2&tag=wtfsibfc-20" target="_blank">Buy the fucking Drink Book</a> </a></div> -->
+
+
+<div id='facebook'>
+<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fisitworldwar3yet.com&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=274170272764469" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:47px; width:50px;" allowTransparency="true"></iframe>
+</div>
+
+<div id="twitter">
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://isitworldwar3yet.com" data-text="Is it WWIII yet?" data-count="none" data-via="marcelkornblum">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+</div>
+
+<div id="famous">
+This site was made by <a href="http://marcelkornblum.com">Marcel</a>.
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-36299698-2', 'isitworldwar3yet.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
