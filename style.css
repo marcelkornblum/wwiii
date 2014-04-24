@@ -41,9 +41,16 @@ p, dt, dl {
 
 }
 
+#flattr {
+    position: fixed;
+    bottom: 27px;
+    right: 135px;
+
+}
+
 #facebook {
     position: fixed;
-    bottom: 0px;
+    bottom: 27px;
     right: 85px;
 
 }
@@ -55,18 +62,6 @@ p, dt, dl {
     right: 25px;
     color: #777777;
 
-}
-
-#adtower {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-}
-
-#book {
-    position: fixed;
-    bottom:75px;
-    right: 25px;
 }
 
 #order {
